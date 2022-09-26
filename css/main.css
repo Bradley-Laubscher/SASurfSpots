@@ -54,6 +54,7 @@ html, body, #map_canvas {
     grid-auto-columns: 24%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+    border: 1px solid;
 }
 
 .container {
@@ -70,5 +71,5 @@ html, body, #map_canvas {
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
-    margin-top: 0;
+    margin: 0;
 }  
