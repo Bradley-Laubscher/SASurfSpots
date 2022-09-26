@@ -45,20 +45,19 @@ html, body, #map_canvas {
     position: absolute;
 }
 
-.main {
-    display: flex;
-}
-
 .footer {
     text-align: center;
     position: absolute;
-    top: 75%;
+    top: 69%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 24%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
 }
 
 .container {
-    display: inline-block;
-    width: 25%;
-    height: 25%;
+    overflow: auto;
 }
 
 .img {
