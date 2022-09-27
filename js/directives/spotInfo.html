@@ -1,2 +1,2 @@
-<h2 class="name">{{ info.name }}</h2>
-<img class="img" ng-src="{{ info.img }}"> 
+<h2 class="name" ng-click="view()">{{ info.message }}</h2>
+<img class="markerImage" alt="Surf spot: {{info.message}}" ng-src="{{ info.img }}" ng-click="view()"/> 
