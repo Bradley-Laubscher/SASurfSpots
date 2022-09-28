@@ -71,13 +71,13 @@ html, body, #map_canvas {
     height: 250px;
 }
 
-.leaflet-marker-icon {
-    filter: grayscale(0.8);
-    opacity: 0.4;
+.markerImage:hover {
+    transform: scale(1.02);
+    transition-duration: 0.1s;
 }
 
-.leaflet-marker-shadow {
-    opacity: 0;
+.markerImage:active {
+    transform: scale(1.01);
 }
 
 .name {
@@ -91,4 +91,13 @@ html, body, #map_canvas {
 .selected {
     border: 5px solid rgb(255, 111, 0);
     transition-duration: 0.2s;
+}
+
+.leaflet-marker-icon {
+    filter: grayscale(0.8);
+    opacity: 0.4;
+}
+
+.leaflet-marker-shadow {
+    opacity: 0;
 }

@@ -23,22 +23,6 @@ app.directive('spotInfo', function() {
                     toggle = false;
                 };
             };
-
-            scope.scroll = function(event) {
-                if (!event.deltaY) {
-                    return;
-                };
-                
-                event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
-                event.preventDefault();
-            }
         }
     }
 });
-
-
-
-
-
-// dont know if I can change color - markers are imported icons - wthout css properties
-// iconSize is a property used to scale the size of the icons.

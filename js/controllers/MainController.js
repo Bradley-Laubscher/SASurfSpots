@@ -85,6 +85,5 @@ app.controller('MainController', ['$scope', function($scope) {
             message: "Coffee Bay",
             img: "../../images/Coffee-Bay.jpg"
         },
-
     ];
 }]);
