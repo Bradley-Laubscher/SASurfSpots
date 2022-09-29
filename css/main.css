@@ -89,13 +89,18 @@ html, body, #map_canvas {
 }  
 
 .selected {
-    border: 5px solid rgb(255, 111, 0);
+    border: 5px solid rgba(0, 0, 255, 0.57);
     transition-duration: 0.2s;
 }
 
 .leaflet-marker-icon {
     filter: grayscale(0.8);
-    opacity: 0.4;
+    opacity: 0.2;
+}
+
+.leaflet-marker-icon:active {
+    filter: grayscale(0);
+    opacity: 1;
 }
 
 .leaflet-marker-shadow {

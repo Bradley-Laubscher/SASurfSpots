@@ -17,7 +17,7 @@
         <div class="main" ng-controller="MainController">
             <leaflet center="mapCenter" markers="mapMarkers" width="100%" height="69%"></leaflet>
             <div class="footer"> 
-                <div class="container" ng-repeat="mapMarker in mapMarkers">
+                <div class="container" ng-repeat="mapMarker in mapMarkers" >
                     <spot-info info="mapMarker"></spot-info>
                 </div>
             </div>
