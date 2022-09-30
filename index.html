@@ -34,5 +34,14 @@
         <script src="js/vendor/angular-leaflet-directive.min.js"></script>
         <script src="js/directives/spotInfo.js"></script>
 
+        <!-- Script for horizontally scrolling while hovering over scrollbar -->
+        <script type="text/javascript">
+            const foot = document.querySelector('.footer');
+            foot.addEventListener('wheel', (ev) => {
+                ev.preventDefault();  // stop scrolling in another direction
+                foot.scrollLeft += (ev.deltaY + ev.deltaX);
+            });
+        </script>
+
     </body>
 </html>
