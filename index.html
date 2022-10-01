@@ -36,10 +36,10 @@
 
         <!-- Script for horizontally scrolling while hovering over scrollbar -->
         <script type="text/javascript">
-            const foot = document.querySelector('.footer');
-            foot.addEventListener('wheel', (ev) => {
+            const footer = document.querySelector('.footer');
+            footer.addEventListener('wheel', (ev) => {
                 ev.preventDefault();  // stop scrolling in another direction
-                foot.scrollLeft += (ev.deltaY + ev.deltaX);
+                footer.scrollLeft += (ev.deltaY + ev.deltaX);
             });
         </script>
 

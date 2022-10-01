@@ -13,7 +13,7 @@ app.directive('spotInfo', function() {
             scope.select = function() {
                 element.toggleClass('selected');
                 const message = scope.info.message;
-
+      
                 // const markerIndex = allMarkers.indexOf(message);
 
                 // const markerStyle = function() {
@@ -172,7 +172,7 @@ app.directive('spotInfo', function() {
                             scope.info.isActive = false;
                         };
                         break;
-                }
+                };
             };
         }
     };
