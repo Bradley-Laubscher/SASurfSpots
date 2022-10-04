@@ -12,7 +12,7 @@ app.directive('spotInfo', function() {
 
             scope.select = function() {
                 element.toggleClass('selected');
-                const message = scope.info.message;
+                const title = scope.info.title;
       
                 // const markerIndex = allMarkers.indexOf(message);
 
@@ -28,7 +28,7 @@ app.directive('spotInfo', function() {
                 //     }
                 // };          
                 
-                switch (message) {
+                switch (title) {
                     case "Jeffreys Bay": 
                         if (!scope.info.isActive) {
                             allMarkers[0].style.opacity = "1";

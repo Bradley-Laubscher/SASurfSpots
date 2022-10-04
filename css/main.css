@@ -98,12 +98,12 @@ html, body, #map_canvas {
 }
 
 .leaflet-marker-icon:hover {
-    filter: grayscale(0);
+    filter: grayscale(0) !important;
 }
 
 .leaflet-marker-icon:active {
-    filter: grayscale(0);
-    opacity: 1;
+    filter: grayscale(0) !important;
+    opacity: 1 !important;
 }
 
 .leaflet-marker-shadow {
