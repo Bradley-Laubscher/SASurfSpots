@@ -11,7 +11,7 @@ app.controller('MainController', ['$scope', function($scope) {
             title: "Jeffreys Bay",
             lat: -34.030868,
             lng: 24.932402,
-            message: "Jeffreys Bay as a surfing destination was made famous by Bruce Brown's movie: The Endless Summer",
+            message: "Jeffreys Bay as a surfing destination was made famous by Bruce Brown's movie: The Endless Summer. It's all about a powerful, fast right-hand point break admired by surfers from all corners of the world.",
             img: "../../images/Jeffreys-Bay.webp",
             isActive: false,
         },
