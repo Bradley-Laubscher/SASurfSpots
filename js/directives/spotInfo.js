@@ -9,31 +9,18 @@ app.directive('spotInfo', function() {
             const markerIcons = document.querySelectorAll(".leaflet-marker-icon");
             let allMarkers = [];
             allMarkers.push(...markerIcons);
+            console.log(allMarkers);         
 
             scope.select = function() {
                 element.toggleClass('selected');
-                const title = scope.info.title;
-      
-                // const markerIndex = allMarkers.indexOf(message);
-
-                // const markerStyle = function() {
-                //     if (!scope.info.isActive) {
-                //         allMarkers[markerIndex].style.opacity = "1";
-                //         allMarkers[markerIndex].style.filter = "grayscale(0)";
-                //         scope.info.isActive = true;
-                //     } else {
-                //         allMarkers[markerIndex].style.opacity = "0.2";
-                //         allMarkers[markerIndex].style.filter = "grayscale(0.8)";
-                //         scope.info.isActive = false;
-                //     }
-                // };          
+                const title = scope.info.title;  
                 
                 switch (title) {
                     case "Jeffreys Bay": 
                         if (!scope.info.isActive) {
                             allMarkers[0].style.opacity = "1";
                             allMarkers[0].style.filter = "grayscale(0)";
-                            scope.info.isActive = true;
+                            scope.info.isActive = true;                     
                         } else {
                             allMarkers[0].style.opacity = "0.2";
                             allMarkers[0].style.filter = "grayscale(0.8)";
