@@ -43,7 +43,7 @@ app.controller('MainController', ['$scope', function($scope) {
             title: "Stillbaai",
             lat: -34.376042,  
             lng: 21.429591,
-            message: "Stillbaai in Boland and Southern Cape is an exposed point break that has fairly consistent surf.",
+            message: "Stillbaai is an exposed point break that has fairly consistent surf.",
             img: "../../images/Stillbaai.jpg",
             isActive: false,
         },
@@ -111,5 +111,5 @@ app.controller('MainController', ['$scope', function($scope) {
             img: "../../images/Coffee-Bay.jpg",
             isActive: false,
         },
-    ];
+    ]; 
 }]);
