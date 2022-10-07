@@ -109,3 +109,24 @@ html, body, #map_canvas {
 .leaflet-marker-shadow {
     opacity: 0;
 }
+
+@media only screen and (max-width: 1000px) {
+    
+    .footer {
+        grid-auto-columns: 44%;
+        height: 31%;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .markerImage {
+        width: 100%;
+        height: 100%;
+    }
+}

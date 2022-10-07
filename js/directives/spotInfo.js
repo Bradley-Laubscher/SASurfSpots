@@ -8,23 +8,29 @@ app.directive('spotInfo', function() {
         link: function(scope, element, attrs) {
             const title = scope.info.title;  
             
-            // Markers           
+            // Markers array         
             const markerIcons = document.querySelectorAll(".leaflet-marker-icon");
             let allMarkers = [];
             allMarkers.push(...markerIcons);
-            console.log(allMarkers);  
             const markerIndex = allMarkers.findIndex(element => element.title === scope.info.title);
-                              
+
+            // Names array
+            const names = document.querySelectorAll('.name');
+            let allNames = [];
+            allNames.push(...names);
+                           
             scope.select = function() {
                 element.toggleClass('selected');
 
                 const activateMarker = function() {
                     if (!scope.info.isActive) {
                         scope.info.isActive = true;
+                        allNames[markerIndex].style.color = "rgba(0, 0, 255, 0.484)";
                         allMarkers[markerIndex].style.opacity = "1";
-                        allMarkers[markerIndex].style.filter = "grayscale(0)";                                        
+                        allMarkers[markerIndex].style.filter = "grayscale(0)";                                    
                     } else {
                         scope.info.isActive = false;
+                        allNames[markerIndex].style.color = "white";
                         allMarkers[markerIndex].style.opacity = "0.2";
                         allMarkers[markerIndex].style.filter = "grayscale(0.8)";
                     }
